@@ -1,0 +1,16 @@
+#! /bin/bash
+###########################################################
+#                                                         #
+#	  By Jacob Fosso Tande, Colby College, 11/14/2018     #
+#     License: GNU General Public License                 #
+#     Synopsis: NONE 									  #
+#	  NOTES:											  #
+#     Macport must be installed, if not,install it        #
+# 	  Update the ports (Macport)                          #
+#     Set path to the ports                               #
+#                             							  #
+###########################################################
+
+export PORTS=/opt/local/bin
+sudo $PORTS/port selfupdate
+sudo $PORTS/port install texlive-publishers
