@@ -7,6 +7,6 @@ helps make your life better. Some of the scripts were initially written by someo
 else but I have modified for my own needs and I encourage you to use mine as it best 
 fits your need.
 
-Scripts in this repository:
-XcodePostInstalledScript.sh
-InstallLiveTexPublisers.sh
+## Scripts in this repository:
+XcodePostInstalledScript.sh 
+InstallLiveTexPublisers.sh 
