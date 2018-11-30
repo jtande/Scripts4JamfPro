@@ -9,4 +9,5 @@ fits your need.
 
 ## Scripts in this repository:
 XcodePostInstalledScript.sh 
+
 InstallLiveTexPublisers.sh 
