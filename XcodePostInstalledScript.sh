@@ -1,7 +1,17 @@
 #!/bin/bash 
-
-# Accept End User License Agreement (EULA) so there is no prompt                                                                             
-
+#####################################################################################################################
+# Most of the script is borrowed from the link below
+# https://github.com/rtrouton/rtrouton_scripts/tree/master/rtrouton_scripts/xcode_post_install_actions
+# WHAT THE SCRIPT DOES
+#   * Accept the Xcode EULA and install the following installer packages embedded inside Xcode:
+#     -  MobileDevice.pkg
+#     -  MobileDeviceDevelopment.pkg
+#     -  XcodeSystemResources.pkg
+#     -  Xcode CLI tools
+#          Download rename (without space) and copy CLI tools to /Applications/Xcode.app/Contents/Resources/Packages/
+#	  see installation at the bottom
+# Modified: Jacob Fosso 11/30/2018
+######################################################################################################################
 if [[ -e "/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild" ]]; then
   "/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild" -license accept
 fi
