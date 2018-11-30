@@ -1,4 +1,4 @@
-# Scripts for Command Line Installation Application installation on MacOs
+# Scripts for Command Line Installation of Applications on MacOs
 If you are tasked with deploying applications on mac computers, you need every 
 piece of information available to help you accomplish this task. In an academic 
 environment, software come from all angle and you need to be able to install them 
@@ -7,7 +7,3 @@ helps make your life better. Some of the scripts were initially written by someo
 else but I have modified for my own needs and I encourage you to use mine as it best 
 fits your need.
 
-## Scripts in this repository:
-XcodePostInstalledScript.sh 
-
-InstallLiveTexPublisers.sh 
