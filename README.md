@@ -6,4 +6,3 @@ at a time noticed. This is a documentation of some scripts I have used and I hop
 helps make your life better. Some of the scripts were initially written by someone 
 else but I have modified for my own needs and I encourage you to use mine as it best 
 fits your need.
-
