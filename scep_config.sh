@@ -5,7 +5,7 @@
 # The idea behind this script comes from the site:
 # https://soundmacguy.wordpress.com/2017/09/18/managing-microsoft-system-center-endpoint-protection-scep-part-1/
 # If you have many Mac computers on which to configure SCEP, then configure one so scep.cfg is generated.
-# Open "/Library/Application Support/Microsoft/scep/etc/scep.cfg" with you test editor of choice
+# Open "/Library/Application Support/Microsoft/scep/etc/scep.cfg" with your test editor of choice
 # scep.cfg has [global]  and [fac] blocks
 # Set global parameter as follows
 # "$SCEP_SET" --section=global '<line from global block>'
