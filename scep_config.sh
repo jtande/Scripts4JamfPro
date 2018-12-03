@@ -36,17 +36,17 @@ echo "Setting global parameters"
 echo " ">"$SCEP_CONFIG"
 echo "[global]">>"$SCEP_CONFIG"
 "$SCEP_SET" --section=global 'privileged_users = "root:user"'
-"$SCEP_SET" --section=global 'av_scan_app_unwanted = yes'
+"$SCEP_SET" --section=global 'av_scan_app_unwanted = no'
 "$SCEP_SET" --section=global 'syslog_facility = "none"'
-"$SCEP_SET" --section=global 'scheduler_tasks = "1;Log maintenance;;0;0 3 * * * *;@logs;3;Startup file check;disabled;0;login;@sscan lowest;4;Startup file check;;0;engine;@sscan lowest;20;Weekly scan;;0;0 2 * * * 0;@uscan scan_deep:/:/Network/Servers:;64;Regular automatic update;disabled;;repeat 60;@update;66;Automatic update after user logon;;;login 60;@update;"'
+"$SCEP_SET" --section=global 'scheduler_tasks = "Automatic update after user logon;;;login 60;@update;"'
 "$SCEP_SET" --section=global 'samples_send_target = ""'
-"$SCEP_SET" --section=global 'av_exclude = "/System/Library/User Template/*.*::/tmp/*.*::"'
+"$SCEP_SET" --section=global 'av_exclude = "/Library/Template/*.*::/templ/*.*::"'
 echo "Setting fac parameters"
 echo " ">>"$SCEP_CONFIG"
 echo "[fac]">>"$SCEP_CONFIG"
 "$SCEP_SET" --section=fac 'action_av = "scan"'
 "$SCEP_SET" --section=fac 'event_mask = "open:exec"'
-"$SCEP_SET" --section=fac 'av_scan_ext_exclude = ".log :.cfg:.tmp:.pdf"'
+"$SCEP_SET" --section=fac 'av_scan_ext_exclude = ".pdf"'
 launchctl unload -wF /Library/LaunchDaemons/com.microsoft.scep_daemon.plist
 launchctl load -wF /Library/LaunchDaemons/com.microsoft.scep_daemon.plist
 echo "SCEP Configuration complete"
