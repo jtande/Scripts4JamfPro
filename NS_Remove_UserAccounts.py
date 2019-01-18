@@ -12,8 +12,8 @@
 ###############################################################################
 import subprocess as sp
 import glob as gb
-
-SKIP= ["/Users/chemadmin", "/Users/labadmin", "/Users/imageaccount", "/Users/Shared", "/Users/jamfsupport", "/Users/support", "/Users/biolabadmin", "/Users/shupfadmin"] #Argument to be passed in  
+#if there are accounts to skip, place them in SKIP list. Edit the list to fit your need
+SKIP= ["/Users/chem", "/Users/labad", "/Users/imagea", "/Users/jsupport", "/Users/subbat", "/Users/biol", "/Users/comp"] #Argument to be passed in  
 
 #Function to find and remove accounts
 def FindRemoveAccounts():
